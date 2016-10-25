@@ -33,6 +33,14 @@ namespace Sandbox
         {
             Book matchingBook = null;
 
+            foreach (var book in books)
+            {
+                if (isbn == book.GetISBN())
+                {
+                    matchingBook = book;
+                }
+            }
+           
             // Add code that will find a book (if any) in the list
             // which has a matching ISBN number. The variable matchingBook
             // should be set to this book
