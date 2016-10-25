@@ -21,13 +21,14 @@ namespace Sandbox
 
             Console.WriteLine("------------- Printing all books ---------------");
             theCatalog.PrintAllBooks();
-            
+            theCatalog.AddBook(b1);
+
             Console.WriteLine("------------------------------------------------");
             Console.WriteLine();
 
             //SafePrintBookInformation(theCatalog.LookupBook("AD1337"));
             //SafePrintBookInformation(theCatalog.LookupBook("AD1338"));
-            //SafePrintBookInformation(theCatalog.LookupBook("PT1295"));
+            SafePrintBookInformation(theCatalog.LookupBook("PT1295"));
             //SafePrintBookInformation(theCatalog.LookupBook("......"));
             //SafePrintBookInformation(theCatalog.LookupBook("ad1337"));
 
